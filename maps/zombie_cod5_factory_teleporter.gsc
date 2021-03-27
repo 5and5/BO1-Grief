@@ -46,7 +46,7 @@ teleporter_init()
 	thread teleport_core_think();
 
 	thread start_black_room_fx();
-	thread init_pack_door();
+	//thread init_pack_door();
 
 	SetDvar( "factoryAftereffectOverride", "-1" );
 	SetSavedDvar( "zombiemode_path_minz_bias", 13 );

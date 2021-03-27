@@ -264,20 +264,20 @@ _setup_simultaneous_pap_triggers()
 		triggers[i] = GetEnt("pap_blocker_trigger" + (i+1), "targetname");
 	}
 
-	if(level.gamemode != "survival")
-	{
-		// end all the threads that manage the pressure plate action
-		for ( i = 0; i < triggers.size; i++ )
-		{
-			triggers[i] notify("pap_active");
-			triggers[i].plate _plate_move_down();
-		}
+	// if(level.gamemode != "survival")
+	// {
+	// 	// end all the threads that manage the pressure plate action
+	// 	for ( i = 0; i < triggers.size; i++ )
+	// 	{
+	// 		triggers[i] notify("pap_active");
+	// 		triggers[i].plate _plate_move_down();
+	// 	}
 
-		_pap_think();
-		_set_num_plates_active(4, 15);
+	// 	_pap_think();
+	// 	_set_num_plates_active(4, 15);
 
-		return;
-	}
+	// 	return;
+	// }
 
 	_randomize_pressure_plates(triggers);
 

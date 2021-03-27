@@ -871,10 +871,10 @@ init_dvars()
 		SetDvar( "zombie_debug", "0" );
 	}
 
-	if( GetDvar( #"zombie_cheat" ) == "" )
-	{
-		SetDvar( "zombie_cheat", "0" );
-	}
+	// if( GetDvar( #"zombie_cheat" ) == "" )
+	// {
+	// 	SetDvar( "zombie_cheat", "0" );
+	// }
 
 	if ( level.script != "zombie_cod5_prototype" )
 	{
@@ -8935,6 +8935,10 @@ set_gamemode()
 	else
 	{
 		level.gamemode = GetDvar("zm_gamemode");
+		if(GetDvar("zm_gamemode") == "")
+		{
+			level.gamemode = "snr";
+		}
 	}
 
 	if(level.gamemode != "survival")

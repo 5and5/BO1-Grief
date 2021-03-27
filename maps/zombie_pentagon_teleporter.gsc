@@ -159,11 +159,11 @@ pack_hideaway_init()
 //-------------------------------------------------------------------------------
 pack_door_init()
 {
-	if(level.gamemode != "survival")
-	{
-		level thread pack_door_buyable_init();
-		return;
-	}
+	// if(level.gamemode != "survival")
+	// {
+	// 	level thread pack_door_buyable_init();
+	// 	return;
+	// }
 
 	trigger = GetEnt("pack_room_door","targetname");
 	doors = GetEntArray(trigger.target, "targetname");
