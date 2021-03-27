@@ -82,7 +82,13 @@ init_no_mans_land()
 	level.NML_MIN_REACTION_DIST_SQ    = 32*32;	  // minimum distance from the player to be able to react
 	level.NML_MAX_REACTION_DIST_SQ	  = 2400*2400;// maximum distance from the player to be able to react
 
-	level.nml_start_perk = GetDvar("nml_start_perk");
+	//level.nml_start_perk = GetDvar("nml_start_perk");
+	if(level.gamemode == "snr")
+	{
+		level.nml_start_perk = "jug";
+	}
+
+	level thread perk_machine_arrival_update();
 }
 
 //******************************************************************************

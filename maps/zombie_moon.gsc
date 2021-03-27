@@ -243,10 +243,10 @@ main()
 	level.zombie_speed_up = ::moon_speed_up;
 	level.ai_astro_explode = ::moon_push_zombies_when_astro_explodes;
 
-	if(level.gamemode != "survival")
-	{
-		level thread init_teleport_players();
-	}
+	// if(level.gamemode != "survival")
+	// {
+	// 	level thread init_teleport_players();
+	// }
 }
 
 moon_push_zombies_when_astro_explodes( position )
@@ -289,7 +289,8 @@ setup_fields()
 no_mans_land_power()
 {
 	level thread turn_area51_perks_on();
-	level notify("Pack_A_Punch_on" );
+	//level notify("Pack_A_Punch_on" );
+
 }
 
 turn_area51_perks_on()
