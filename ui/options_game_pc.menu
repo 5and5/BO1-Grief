@@ -109,7 +109,7 @@
 
 			if(dvarString(zm_gamemode) == "")
 			{
-				setDvar zm_gamemode "survival";
+				setDvar zm_gamemode "snr";
 			}
 
 			if(dvarString(zombie_coast_initial_box_location) == "")
@@ -239,7 +239,7 @@
 
 		FRAME_CHOICE_SECTION_TITLE( 30, "@REIMAGINED_HOST_ONLY" )
 
-		FRAME_CHOICE_DVARSTRINGLIST_VIS( 31, "@REIMAGINED_GAMEMODE_CAPS", zm_gamemode, { "@REIMAGINED_GAMEMODE_SURVIVAL_CAPS"; "survival"; "@REIMAGINED_GAMEMODE_GRIEF_CAPS"; "grief"; "@REIMAGINED_GAMEMODE_SNR_CAPS"; "snr"; "@REIMAGINED_GAMEMODE_RACE_CAPS"; "race"; "@REIMAGINED_GAMEMODE_GG_CAPS"; "gg"; "@MPUI_RANDOM_CAPS"; "random" }, ;, 1)
+		FRAME_CHOICE_DVARSTRINGLIST_VIS( 31, "@REIMAGINED_GAMEMODE_CAPS", zm_gamemode, { "@REIMAGINED_GAMEMODE_SNR_CAPS"; "snr"; "@REIMAGINED_GAMEMODE_SURVIVAL_CAPS"; "survival"; "@REIMAGINED_GAMEMODE_GRIEF_CAPS"; "grief"; "@REIMAGINED_GAMEMODE_RACE_CAPS"; "race"; "@REIMAGINED_GAMEMODE_GG_CAPS"; "gg"; "@MPUI_RANDOM_CAPS"; "random" }, ;, 1)
 		//	"@REIMAGINED_GAMEMODE_CTF_CAPS"; "ctf"; "@REIMAGINED_GAMEMODE_KOTH_CAPS"; "koth"; "@REIMAGINED_GAMEMODE_TURNED_CAPS"; "turned";
 
 		//FRAME_CHOICE_DVARSTRINGLIST_VIS( 31, "@REIMAGINED_GAMEMODE_CAPS", zm_gamemode, { "@REIMAGINED_GAMEMODE_SURVIVAL_CAPS"; "survival" }, ;, 1)
@@ -519,11 +519,14 @@
 
 		POPUP_TITLE_VIS( 90 10 120 80, "@REIMAGINED_GRIEF_SETTINGS", when(dvarString("ui_options_game_popup") == "grief_settings") )
 
-		CHOICE_DVARSTRINGLIST_VIS( 3, "@REIMAGINED_POWER", grief_power, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+		CHOICE_DVARSTRINGLIST_VIS( 2, "@REIMAGINED_POWER", grief_power, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
 
-		CHOICE_DVARSTRINGLIST_VIS( 4, "@REIMAGINED_SUPER_SPRINTERS", grief_super_sprinters, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+		CHOICE_DVARSTRINGLIST_VIS( 3, "@REIMAGINED_DOORS", grief_doors, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+		
+		CHOICE_DVARSTRINGLIST_VIS( 4, "@REIMAGINED_INFINITE_SPRINT", grief_infinte_sprint, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
 
-		CHOICE_DVARSTRINGLIST_VIS( 5, "@REIMAGINED_INFINITE_SPRINT", grief_infinte_sprint, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+		CHOICE_DVARSTRINGLIST_VIS( 5, "@REIMAGINED_SUPER_SPRINTERS", grief_super_sprinters, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+
 
 
 		#undef CHOICE_TEXT_OFFSET_X
