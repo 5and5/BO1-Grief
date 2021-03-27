@@ -137,6 +137,26 @@
 				setDvar zombie_theater_initial_box_location "random";
 			}
 
+			if(dvarString(grief_power) == "")
+			{
+				setDvar grief_power "1";
+			}
+
+			if(dvarString(grief_doors) == "")
+			{
+				setDvar grief_doors "1";
+			}
+
+			if(dvarString(grief_super_sprinters) == "")
+			{
+				setDvar grief_super_sprinters "1";
+			}
+
+			if(dvarString(grief_infinte_sprint) == "")
+			{
+				setDvar grief_infinte_sprint "1";
+			}
+
 			LOCAL_CLOSE_ALL_BUT( options_game )
 
 			setLocalVarBool ui_hideBack 1;
