@@ -152,9 +152,9 @@
 				setDvar grief_super_sprinters "1";
 			}
 
-			if(dvarString(grief_infinte_sprint) == "")
+			if(dvarString(grief_unlimited_sprint) == "")
 			{
-				setDvar grief_infinte_sprint "1";
+				setDvar grief_unlimited_sprint "1";
 			}
 
 			LOCAL_CLOSE_ALL_BUT( options_game )
@@ -543,7 +543,7 @@
 
 		CHOICE_DVARSTRINGLIST_VIS( 3, "@REIMAGINED_DOORS", grief_doors, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
 		
-		CHOICE_DVARSTRINGLIST_VIS( 4, "@REIMAGINED_INFINITE_SPRINT", grief_infinte_sprint, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
+		CHOICE_DVARSTRINGLIST_VIS( 4, "@REIMAGINED_UNLIMITED_SPRINT", grief_unlimited_sprint, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
 
 		CHOICE_DVARSTRINGLIST_VIS( 5, "@REIMAGINED_SUPER_SPRINTERS", grief_super_sprinters, { "@REIMAGINED_ON"; "1"; "@REIMAGINED_OFF"; "0" }, ;, when(dvarString("ui_options_game_popup") == "grief_settings"))
 
