@@ -149,7 +149,7 @@
 
 			if(dvarString(grief_super_sprinters) == "")
 			{
-				setDvar grief_super_sprinters "1";
+				setDvar grief_super_sprinters "0";
 			}
 
 			if(dvarString(grief_unlimited_sprint) == "")

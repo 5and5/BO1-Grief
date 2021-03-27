@@ -413,9 +413,13 @@ set_run_speed()
 
 		if(rand > 105)
 		{
-			if(level.script == "zombie_cod5_asylum" && flag("power_on"))
+			if(getDvar("grief_super_sprinters") == "1" )
 			{
 				self.zombie_move_speed_supersprint = true;
+			}
+			else
+			{
+				self.zombie_move_speed_supersprint = false;
 			}
 		}
 	}

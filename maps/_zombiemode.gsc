@@ -1199,6 +1199,8 @@ init_standard_zombie_anims()
 	level.scr_anim["zombie"]["sprint2"] = %ai_zombie_sprint_v2;
 	level.scr_anim["zombie"]["sprint3"] = %ai_zombie_sprint_v1;
 	level.scr_anim["zombie"]["sprint4"] = %ai_zombie_sprint_v2;
+	level.scr_anim["zombie"]["sprint5"] = %ai_zombie_fast_sprint_01;
+	level.scr_anim["zombie"]["sprint6"] = %ai_zombie_fast_sprint_02;
 
 	// run cycles in prone
 	level.scr_anim["zombie"]["crawl1"] 	= %ai_zombie_crawl;
