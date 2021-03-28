@@ -984,6 +984,9 @@ turn_power_on()
 				trig = getent("use_power_switch","targetname");
 				trig notify("trigger");
 				break;
+			case "zombie_ww":
+				trig = getent("use_elec_switch","targetname");
+				trig notify("trigger");	
 		}
 	}
 }

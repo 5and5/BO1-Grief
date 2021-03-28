@@ -32,6 +32,8 @@ rawfile,maps/_zombiemode_ai_quad.gsc
 rawfile,maps/_zombiemode_zone_manager.gsc
 rawfile,maps/_zombiemode_sidequests.gsc
 rawfile,maps/_zombiemode_grief.gsc
+rawfile,maps/_custom_zapper_system.gsc
+
 
 //NACHT
 rawfile,maps/zombie_cod5_prototype.gsc
@@ -432,3 +434,10 @@ localize,reimagined
 
 //IGNORE FILES THAT ARE ALREADY LOADED IN THE BASE GAME
 ignore,ignorefiles
+
+
+//PREVIEW
+stringtable,maps\mapsTable.csv
+rawfile,mod.arena
+material,preview_zombie_apment
+material,loadscreen_zombie_ww

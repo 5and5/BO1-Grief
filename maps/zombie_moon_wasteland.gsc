@@ -106,7 +106,7 @@ nml_dogs_init()
 {
 	level.nml_dogs_enabled = false;
 	wait(30);
-	level.nml_dogs_enabled = true;
+	//level.nml_dogs_enabled = true;
 }
 //******************************************************************************
 nml_setup_round_spawner()

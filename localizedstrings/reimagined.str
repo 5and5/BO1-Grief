@@ -15,6 +15,12 @@
 
 //HINTSTRINGS
 
+REFERENCE       "ZOMBIE_WWL_CAPS"
+LANG_ENGLISH    "Winter Wunderland"
+
+REFERENCE       "ZOMBIE_WWL_DESC_CAPS"
+LANG_ENGLISH    "In an abandoned town deep in the mountains, the frozen undead rise from the snow..."
+
 REFERENCE           WEAPONCOSTAMMO
 LANG_ENGLISH        "Hold ^3[{+activate}]^7 to buy Weapon [Cost: &&1], Ammo [Cost: &&2]"
 

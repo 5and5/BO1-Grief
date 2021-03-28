@@ -1996,7 +1996,7 @@ onPlayerSpawned()
 
 		if ( is_true( level.player_out_of_playable_area_monitor ) )
 		{
-			self thread player_out_of_playable_area_monitor();
+			//self thread player_out_of_playable_area_monitor();
 		}
 
 		if ( is_true( level.player_too_many_weapons_monitor ) )
